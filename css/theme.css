@@ -95,6 +95,7 @@ body::-webkit-scrollbar-thumb {
 .pageloader {
 	height: auto;
 	width: 40vw;
+	background-color: #0d1117;
 }
 
 .logo-wide {
