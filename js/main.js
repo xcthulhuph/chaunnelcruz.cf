@@ -1,6 +1,6 @@
 //loader
 document.onreadystatechange = function() { 
-            if (document.readyState !== "loading") { 
+            if (document.readyState !== "complete") { 
                 document.querySelector( 
                   "body").style.visibility = "hidden"; 
                 document.querySelector( 
@@ -30,7 +30,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 500, function(){
+      }, 800, function(){
 
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
