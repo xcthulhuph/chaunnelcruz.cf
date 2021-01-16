@@ -51,8 +51,8 @@
 <body data-spy="scroll" data-target="#scrollspy" class="main-body"> <!-- body start -->
 <div id="home" class="">
 <!-- Loader Starts Here -->
-<div class="pageloader" >
-    <img id="loader" alt="Loading please wait ..." src="assets/loader.png" class="center loaderimage">
+<div class="pageloader" id="loader">
+    <img alt="Loading please wait ..." src="assets/loader.png" class="center loaderimage">
 
 </div>
 <!-- Loader Ends Here -->
@@ -103,10 +103,10 @@
         </ul>
     </div>
 </nav>
-<nav class="navbar-expand-sm" id="scrollspy"><!-- Pill navigation -->
+<!-- Pill navigation -->
 
     <div class=" home-navigation collapse navbar-collapse flex-grow-1" id="Navbar">
-        <ul class="nav nav-pills ml-auto flex-nowrap" role="tablist">
+        <ul class="nav nav-pills ml-auto flex-nowrap" role="tablist" id="scrollspy">
         <li class="nav-item">
             <a role="button" href="#home" class="nav-link btn-outline-light active" data-toggle="pill">Home</a>
         </li>
@@ -121,7 +121,7 @@
         </li>
         </ul>
     </div>
-</nav><!-- /Pill navigation -->
+<!-- /Pill navigation -->
 
 <!-- HEADER -->
 <div class="py-5 header text-center text-white mt-5 container-fluid py-5 text-white">
@@ -190,8 +190,6 @@
 
 <!-- /SECTIONS -->
 
-
-<iframe src="https://www.youtube.com/watch?v=arqv2YVp_3E"></iframe>
 
 </div> <!-- /MAIN DIV -->
 </body> 
