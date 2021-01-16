@@ -1,0 +1,25 @@
+/*
+MAIN CSS COMPONENTS
+
+1. Main theme color - (Github theme)
+2. Scroll Bar color
+3. Global tags
+*/
+
+html {
+	color: #fff;
+
+}
+
+body {
+	background-color: #0d1117;
+	color: #fff; /* This is the global font color */
+	font-family: monospace;
+	position: relative;
+}
+
+a { /* hover design is in theme.css*/
+	text-decoration: none;
+	color: #fff;
+}
+
