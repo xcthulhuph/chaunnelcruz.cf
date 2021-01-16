@@ -36,20 +36,20 @@
     <title>Chaunnel Cruz</title> 
 </head> 
   
-<body data-spy="scroll" data-target="#scrollspy"> <!-- body start -->
-
+<body data-spy="scroll" data-target="#scrollspy" class="main-body"> <!-- body start -->
+<div id="home" class="">
 <!-- Loader Starts Here -->
-    <img id="loader" src="assets/loader.png" class="center" style="height: auto; width: 300px;">
+    <img id="loader" alt="Loading please wait ..." src="assets/loader.png" class="center pageloader">
 <!-- Loader Ends Here -->
 
-<nav class="navbar navbar-expand-lg sticky-top">
+<nav class="navbar navbar-expand-lg sticky-top main-nav">
     <div class="d-flex flex-grow-1">
         <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
         <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-            <img src="assets/logo.png" alt="logo" style="height: auto; width: 150px; margin-bottom: 0px;"><!-- 100x30px -->
+            <img src="assets/logo.png" alt="logo" class="logo-wide"><!-- 100x30px -->
         </a>
         <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
-            <img src="assets/logo.png" alt="smalllogo" style="height: auto; width: 200px; margin-bottom: 0px;"> <!-- 40x40 -->
+            <img src="assets/logo.png" alt="smalllogo" class="logo-small"> <!-- 40x40 -->
         </a>
         <div class="w-100 text-right">
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#Navbar">
@@ -83,113 +83,102 @@
             </li>
         </ul>
         <ul class="navbar-nav navbar-btns">
-            <a class="nav-link search" href="/search">
-                <i class="fa fa-search fa-lg"></i>
-            </a>
             <li class="nav-item login"><a class="btn btn-outline-light px-4 rounded-0 btn-sm btn-cust" href=""><span class="fa fa-user-circle mr-1"></span>Login</a></li>
         </ul>
     </div>
 </nav>
 <!-- Pill navigation -->
-  <div class="home-navigation">
-  <nav id="scrollspy" >
-<ul class="nav nav-pills" role="tablist">
-  <li class="nav-item">
-    <a role="button" href="#home" class="nav-link btn-outline-light active" data-toggle="pill">Home</a>
-  </li>
-  <li class="nav-item">
-    <a role="button" href="#two" class="nav-link btn-outline-light" data-toggle="pill">Gallery</a>
-  </li>
-  <li class="nav-item">
-    <a role="button" href="#three" class="nav-link btn-outline-light" data-toggle="pill">Blog</a>
-  </li>
-
-
-</ul></nav></div>
+<div class="home-navigation" id="secondNavbar">
+    <nav id="scrollspy" class="navbar">
+        <ul class="nav nav-pills ml-auto" role="tablist">
+        <li class="nav-item">
+            <a role="button" href="#home" class="nav-link btn-outline-light active" data-toggle="pill">Home</a>
+        </li>
+        <li class="nav-item">
+            <a role="button" href="#aboutme" class="nav-link btn-outline-light" data-toggle="pill">About</a>
+        </li>
+        <li class="nav-item">
+            <a role="button" href="#two" class="nav-link btn-outline-light" data-toggle="pill">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a role="button" href="#three" class="nav-link btn-outline-light" data-toggle="pill">Blog</a>
+        </li>
+        </ul>
+    </nav>
+</div>
 <!-- /Pill navigation -->
 
+<!-- HEADER -->
+<div class="py-5 header text-center text-white mt-5 container-fluid py-5 text-white">
+    <header class="py-5 my-lg-5">
+        <h1 class="display-4">Welcome to the Landing Page</h1>
+        <p class="font-italic mb-1">This is a sample sub-title of the Landing Page. </p>
+        <p class="font-italic">Template by
+            <a class="text-white" href="#home">
+                Chaunnel
+            </a>
+        </p>
+        <p class="font-italic">Framework used in this template:
+            <a class="text-white" href="#home" target="_blank">
+                Bootstrap 4
+            </a>
+        </p>
+    </header>
+</div>
+<!-- /HEADER -->
 
-
-
-<!-- Main Div -->
-
-<!-- Demo header-->
-<section class="py-5 header text-center text-white mt-5" id="home">
-    <div class="container-fluid py-5 text-white">
-        <header class="py-5 my-lg-5">
-            <h1 class="display-4">Welcome to the Landing Page</h1>
-            <p class="font-italic mb-1">This is a sample sub-title of the Landing Page. </p>
-            <p class="font-italic">Template by
-                <a class="text-white" href="#home">
-                    <u>Chaunnel</u>
-                </a>
-            </p>
-            <p class="font-italic">Framework used in this template:
-                <a class="text-white" href="#home" target="_blank">
-                    <u>Bootstrap 4</u>
-                </a>
-            </p>
-        </header>
-    </div>
-</section>
-
-<!-- Demo section 1 -->
-<section class="py-5 d-flex align-items-center" id="one">
+<!-- SECTIONS -->
+<div class="about-me" id="aboutme">
+    <section class="py-5 d-flex align-items-center">
     <div class="container py-5">
         <div class="row text-center">
             <div class="col-lg-9 mx-auto">
-                <h2 class="h1 mb-4">Demo section 1</h2>
+                <h1 class="h1 mb-4">A little something about ME.</h1>
                 <p class="font-italic mb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <!-- Scroll to top -->
                 <a class="btn btn-outline-light px-4 rounded-0 scroll-top" href="#home">Back to top</a>
             </div>
         </div>
     </div>
-</section>
+    </section>
+</div>
 
-<!-- Demo section 2-->
-<section class="py-5 d-flex align-items-center" id="two">
+<div class="gallery" id="two">
+    <section class="py-5 d-flex align-items-center">
     <div class="container py-5">
         <div class="row text-center">
             <div class="col-lg-9 mx-auto">
-                <h2 class="h1 mb-4">Demo section 2</h2>
+                <h1 class="h1 mb-4">Demo section 2</h1>
                 <p class="font-italic mb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <!-- Scroll to top -->
                 <a class="btn btn-outline-light px-4 rounded-0 scroll-top" href="#home">Back to top</a>
             </div>
         </div>
     </div>
-</section>
+    </section>
+</div>
 
-<!-- Demo section 3 -->
-<section class="py-5 d-flex align-items-center" id="three">
+<div class="blog" id="three">
+    <section class="py-5 d-flex align-items-center">
     <div class="container py-5">
         <div class="row text-center">
             <div class="col-lg-9 mx-auto">
-                <h2 class="h1 mb-4">Demo section 3</h2>
+                <h1 class="h1 mb-4">Demo section 3</h1>
                 <p class="font-italic mb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <!-- Scroll to top -->
                 <a class="btn btn-outline-light px-4 rounded-0 scroll-top" href="#home">Back to top</a>
             </div>
         </div>
     </div>
-</section>
+    </section>
+</div>
 
-<!-- Demo section 4 -->
-<section class="py-5 d-flex align-items-center" id="four">
-    <div class="container py-5">
-        <div class="row text-center">
-            <div class="col-lg-9 mx-auto">
-                <h2 class="h1 mb-4">Demo section 4</h2>
-                <p class="font-italic mb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <!-- Scroll to top -->
-                <a class="btn btn-outline-light px-4 rounded-0 scroll-top" href="#home">Back to top</a>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- /SECTIONS -->
 
 
+
+
+</div> <!-- /MAIN DIV -->
 </body> 
   
 </html> 
