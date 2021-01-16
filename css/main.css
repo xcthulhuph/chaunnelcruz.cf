@@ -30,3 +30,6 @@ a { /* hover design is in theme.css*/
 	color: #fff;
 }
 
+a:hover {
+	text-decoration: none;
+}
