@@ -1,4 +1,19 @@
-/* Smooth Scroll Start --------
+//loader
+document.onreadystatechange = function() { 
+            if (document.readyState !== "complete") { 
+                document.querySelector( 
+                  "body").style.visibility = "hidden"; 
+                document.querySelector( 
+                  "#loader").style.visibility = "visible"; 
+            } else { 
+                document.querySelector( 
+                  "#loader").style.display = "none"; 
+                document.querySelector( 
+                  "body").style.visibility = "visible"; 
+            } 
+        }; 
+
+//Smooth Scroll Start --------
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -24,3 +39,6 @@ $(document).ready(function(){
   });
 });
 //Smooth Scroll End --------
+//scroll spy
+$('body').scrollspy({ target: '#scrollspy' })
+
