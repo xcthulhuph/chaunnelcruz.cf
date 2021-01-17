@@ -123,7 +123,7 @@ body::-webkit-scrollbar-thumb {
 	border-color: transparent;
 	margin-right: 20px;
 	margin-left: 20px;
-	position: static;
+	display: inline-block;
 }
 
 .loader-footer-hr:not(empty)::before {
