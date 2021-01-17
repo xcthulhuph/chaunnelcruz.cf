@@ -6,3 +6,8 @@ Version 1.5:
 - Added hover colors on social links in the loader.
 - theme.css was re-arranged for better styling placement.
 - description was changed.
+
+Version 1.6:
+
+- Reworked the index.html
+- Removed the hr design from the social footer from the preloader
