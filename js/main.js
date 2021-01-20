@@ -1,6 +1,6 @@
 //loader //loading,complete,interactive
-document.onreadystatechange = function() { 
-            if (document.readyState !== "loading" ) { 
+document.onreadystatechange = function bodyload() { 
+            if (document.readyState !== "complete" ) { 
                 document.querySelector( 
                   "body").style.visibility = "hidden"; 
                 document.querySelector( 
@@ -11,7 +11,8 @@ document.onreadystatechange = function() {
                 document.querySelector( 
                   "body").style.visibility = "visible"; 
             } 
-        }; 
+        };
+
 
 //Smooth Scroll Start --------
 $(document).ready(function(){
