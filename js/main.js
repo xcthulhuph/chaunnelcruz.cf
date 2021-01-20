@@ -1,5 +1,5 @@
 //loader //loading,complete,interactive
-document.onreadystatechange = function bodyload() { 
+document.onreadystatechange = function() { 
             if (document.readyState !== "complete" ) { 
                 document.querySelector( 
                   "body").style.visibility = "hidden"; 
@@ -13,7 +13,7 @@ document.onreadystatechange = function bodyload() {
             } 
         };
 
-
+$('body').scrollspy({ target: '#scrollspy' });
 //Smooth Scroll Start --------
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -41,6 +41,6 @@ $(document).ready(function(){
 });
 //Smooth Scroll End --------
 //scroll spy
-$('body').scrollspy({ target: '#scrollspy' });
+
 
 
