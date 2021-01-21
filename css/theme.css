@@ -193,6 +193,10 @@ a:hover {
 
 }
 
+.nav-link:focus, .nav-link:active, .nav-link:focus {
+	outline: none;
+	box-shadow: none;
+}
 /* Sections */
 
 .about-me {
@@ -447,3 +451,10 @@ h5.social-title {
 a.footer-blog-title {
 	color: #fff;
 }
+
+
+
+
+
+
+
