@@ -463,7 +463,7 @@ a.footer-blog-title {
   transition: all 0.5s; }
 
 nav.scrollUp {
-    transform: translateY(-150px); 
+    transform: translateY(-180px); 
     transition-duration: 1.5s;
 }
   
