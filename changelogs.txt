@@ -11,3 +11,9 @@ Version 1.6:
 
 - Reworked the index.html
 - Removed the hr design from the social footer from the preloader
+
+Version 1.7:
+
+- scrollspy function issue has been fixed.
+-footer
+-fixed loader covers all

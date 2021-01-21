@@ -13,7 +13,8 @@ document.onreadystatechange = function() {
             } 
         };
 
-$('body').scrollspy({ target: '#scrollspy' });
+
+
 //Smooth Scroll Start --------
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -38,9 +39,11 @@ $(document).ready(function(){
       });
     } // End if
   });
+  //scroll spy
+  $('body').scrollspy({ target: '#scrollspy' });
 });
 //Smooth Scroll End --------
-//scroll spy
+
 
 
 
