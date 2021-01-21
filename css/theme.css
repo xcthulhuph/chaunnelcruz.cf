@@ -463,7 +463,9 @@ a.footer-blog-title {
   transition: all 0.5s; }
 
 nav.scrollUp {
-    transform: translateY(-80px); }
+    transform: translateY(-150px); 
+    transition-duration: 1.5s;
+}
   
 ul.navbar-menu {
     margin-top: 3px;
@@ -486,4 +488,6 @@ nav button {
     float: right;
     display: inline-block;
 }
+
+
 
