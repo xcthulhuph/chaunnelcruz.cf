@@ -441,6 +441,10 @@ h5.social-title {
 	margin-bottom: 10px;
 }
 
+.footer-logo {
+	width: 220px;
+}
+
 a.footer-blog-title {
 	color: #fff;
 }
