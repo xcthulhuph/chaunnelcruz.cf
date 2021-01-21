@@ -487,7 +487,3 @@ nav button {
     display: inline-block;
 }
  
-@media (max-width: 768px) {
-
-  nav button {
-    display: block; } }
