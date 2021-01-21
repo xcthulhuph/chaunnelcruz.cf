@@ -44,10 +44,12 @@
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/popper.min.js" type="text/javascript"></script>
     <script src="js/4.1.0/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/sec.js" type="text/javascript"></script>
     <!-- TITLE TAGS -->
     <title>Chaunnel Cruz</title> 
 </head>
-<body data-spy="scroll" data-target="#scrollspy" class="main-body"> 
+<body data-spy="scroll" data-target="#scrollspy"> 
+    
 <div id="home"> <!-- First Div (Main Div) -->
     <div class="pageloader" id="loader"> <!-- Loader -->
         <img alt="Loading please wait ..." src="assets/loader.png" class="center loaderimage">
@@ -62,13 +64,13 @@
         </div> <!-- /Loader Social Footer -->
     </div> <!-- /Loader -->
 
-<nav class="navbar navbar-expand-lg sticky-top main-nav"> <!-- Main Navigation -->
+<nav class="navbar navbar-expand-lg main-nav" id="scrollspy"> <!-- Main Navigation -->
     <div class="d-flex flex-grow-1">
         <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-        <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
+        <a class="navbar-brand d-none d-lg-inline-block brand" href="index.html">
             <img src="assets/logo.png" alt="chaunnelcruz" class="logo-wide"><!-- 100x30px -->
         </a>
-        <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="index.html">
+        <a class="navbar-brand-two mx-auto d-lg-none d-inline-block brand" href="index.html">
             <img src="assets/logo.png" alt="chaunnelcruz" class="logo-small"> <!-- 40x40 -->
         </a>
         
@@ -79,58 +81,31 @@
         </div>
     </div>
     <div class="collapse navbar-collapse flex-grow-1" id="Navbar">
-        <ul class="navbar-nav ml-auto flex-nowrap">
-            <li class="nav-item">
-                <a href="#home" data-toggle="pill" class="nav-link m-2 menu-item nav-active">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#aboutme" data-toggle="pill" class="nav-link m-2 menu-item">About</a>
-
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link m-2 menu-item">Contact</a>
-            </li>
-            <!-- <li class="nav-item">
-                <div class="dropdown"> <a class="nav-link m-2 dropdown-toggle " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
-                    <div class="dropdown-menu nav2-dd" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item nav2-text" href="#">Achievements</a>
-                        <a class="dropdown-item nav2-text" href="#">Portfolio</a> 
-                        <a class="dropdown-item nav2-text" href="#">Projects</a> 
-                    </div>
-                </div>
-            </li> -->
-        </ul>
-        <ul class="navbar-nav navbar-btns">
-            <li class="nav-item login"><a class="btn btn-outline-light px-4 rounded-0 btn-sm btn-cust" href="">Login</a></li>
+        <ul class="navbar-nav nav-pills ml-auto flex-nowrap navbar-menu" role="tablist">
+        <li class="nav-item menu-item">
+            <a role="button" href="#home" class="nav-link btn-outline-light active" data-toggle="pill"> <i class="fa fa-home"></i> Home </a>
+        </li>
+        <li class="nav-item menu-item">
+            <a role="button" href="#aboutme" class="nav-link btn-outline-light" data-toggle="pill"> <i class="fa fa-info"></i> About </a>
+        </li>
+        <li class="nav-item menu-item">
+            <a role="button" href="#gallery" class="nav-link btn-outline-light" data-toggle="pill"> <i class="fa fa-image"></i> Gallery </a>
+        </li>
+        <li class="nav-item menu-item">
+            <a role="button" href="#blog" class="nav-link btn-outline-light" data-toggle="pill"> <i class="fa fa-quote-left"></i> Blog </a>
+        </li>
+        <li class="nav-item menu-item">
+            <a role="button" href="#contact
+            " class="nav-link btn-outline-light nav-text" data-toggle="pill"> <i class="fa fa-at"></i> Contact </a>
+        </li>
+        <li class="nav-item"><a class="btn btn-outline-light px-4 rounded-0 btn-cust nav-text" href="">Login</a></li>
         </ul>
     </div>
 </nav> <!-- /Main Navigation -->
 
-<nav class="navbar-expand-sm" id="scrollspy"> <!-- Pill navigation -->
-
-    <div class="home-navigation collapse navbar-collapse flex-grow-1 container-fluid" id="Navbar">
-        <ul class="nav nav-pills ml-auto flex-nowrap" role="tablist">
-        <li class="nav-item">
-            <a role="button" href="#home" class="nav-link btn-outline-light active" data-toggle="pill"><i class="fa fa-home"></i> Home</a>
-        </li>
-        <li class="nav-item">
-            <a role="button" href="#aboutme" class="nav-link btn-outline-light" data-toggle="pill"><i class="fa fa-info"></i> About</a>
-        </li>
-        <li class="nav-item">
-            <a role="button" href="#gallery" class="nav-link btn-outline-light" data-toggle="pill"><i class="fa fa-image"></i> Gallery</a>
-        </li>
-        <li class="nav-item">
-            <a role="button" href="#blog" class="nav-link btn-outline-light" data-toggle="pill"><i class="fa fa-quote-left"></i> Blog</a>
-        </li>
-        <li class="nav-item">
-            <a role="button" href="#contact
-            " class="nav-link btn-outline-light" data-toggle="pill"><i class="fa fa-at"></i> Contact</a>
-        </li>
-        </ul>
-    </div>
-</nav> <!-- /Pill navigation -->
 
 <!-- HEADER -->
+
 
 <div class="py-5 header text-center text-white mt-5 container-fluid py-5 text-white">
     <header class="py-5 my-lg-5">
@@ -190,6 +165,12 @@
             <div class="col-lg-9 mx-auto">
                 <h1 class="h1 mb-4">Blog</h1>
                 <p class="font-italic mb-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="container-fluid blog-card">
+                <div class="card">
+                    <img src="assets/banner.png" alt="blog-banner" style="width: 300px; height: 200px; align-self: center;">
+                </div>
+                
+            </div>
                 <!-- Scroll to top -->
                 <a class="btn btn-outline-light px-4 rounded-0 scroll-top" href="#home">Back to top</a>
             </div>
@@ -209,13 +190,13 @@
                         <div class="kilimanjaro_part">
                             <a href="#home"><img src="assets/logo.png" alt="chaunnelcruz" class="footer-logo"></a>
                             <p>It includes rich features & contents. It's designed & developed based on One Page/ Multi-page Layout,blog themes,world press themes and blogspot. You can use any layout from any demo anywhere.</p>
-                            <p>webblogoverflow is completely creative, clean & 100% responsive website. Put your business into next level with Webublogoverflow.</p>
+                            <p>chaunnelcruz is completely creative, clean & 100% responsive website. Put your business into next level with chaunnelcruz.</p>
                         </div>
                         
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="kilimanjaro_part">
-                            <h5>Tags Widget</h5>
+                            <h5>Blog Tags</h5>
                             <ul class=" kilimanjaro_widget">
                                 <li><a href="#" class="btn btn-outline-light btn-sm">Classy</a></li>
                                 <li><a href="#" class="btn btn-outline-light btn-sm">Blog</a></li>
@@ -242,7 +223,7 @@
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="kilimanjaro_part">
-                            <h5>Latest News</h5>
+                            <h5>Latest Blogs</h5>
                             <div class="kilimanjaro_blog_area">
                                 <div class="kilimanjaro_thumb">
                                 <img class="img-fluid" src="https://3.bp.blogspot.com/--C1wpaf_S4M/W7V__10nRoI/AAAAAAAAK24/1NSfapuYSIY0f0wzXY9NgoH0FjQLT07YACKgBGAs/s1600/maxresdefault.jpg" alt="">
@@ -275,7 +256,7 @@
                             <h5 class="social-title">Contact Me</h5>
                             <div class="kilimanjaro_social_links">
                                 <a class="btn btn-outline-light btn-sm btn-cust" href="mailto:chaunnel@chaunnelcruz.cf"><i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
-                                <a class="btn btn-outline-light btn-sm btn-cust" href="mailto:chaunnel@chaunnelcruz.cf"><i class="fa fa-phone-alt" aria-hidden="true"></i> Phone</a>
+                                <a class="btn btn-outline-light btn-sm btn-cust" href="mailto:chaunnel@chaunnelcruz.cf"><i class="fa fa-phone" aria-hidden="true"></i> Phone</a>
                             </div>
                         </div>
                         <div class="kilimanjaro_part m-top-15">
@@ -299,23 +280,25 @@
                             <h5 class="social-title">More from Me</h5>
                             <ul class=" ">
                                 <li class="footer-hackthebox"><script src="https://www.hackthebox.eu/badge/204102"></script></li>
-                                <li class="footer-tryhackme"><script src="https://tryhackme.com/badge/82043"></script></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- Footer Bottom Area Start -->
-        <div class=" kilimanjaro_bottom_header_one section_padding_50 text-center">
+        <div class=" kilimanjaro_bottom_header_one section_padding_50">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p>Template made by <a href="#">Chaunnel Cruz</a></p>
+                        <p>Template made by <a href="#" class="">Chaunnel Cruz</a><a class="btn btn-outline-light px-4 rounded-0 btn-cust pull-right" href="#home">Back to Top</a></p>
+                        
                     </div>
                 </div>
             </div>
         </div>
+
     </footer>
 <!-- /FOOTER -->
 </div> <!-- /First Div (Main Div) -->

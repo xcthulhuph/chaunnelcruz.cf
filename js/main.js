@@ -1,6 +1,6 @@
 //loader //loading,complete,interactive
 document.onreadystatechange = function() { 
-            if (document.readyState !== "loading" ) { 
+            if (document.readyState !== "complete" ) { 
                 document.querySelector( 
                   "body").style.visibility = "hidden"; 
                 document.querySelector( 
@@ -43,7 +43,3 @@ $(document).ready(function(){
   $('body').scrollspy({ target: '#scrollspy' });
 });
 //Smooth Scroll End --------
-
-
-
-

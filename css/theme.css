@@ -10,10 +10,9 @@ What this theme.css includes:
 	2.3 Loader HR
 3. Main Navigation
 	3.1 Navigation Logo
-4. Home Navigation
-5. Sections
-6. Landing Page Header
-7. Footer
+4. Sections
+5. Landing Page Header
+6. Footer
 */
 
 /* <---------------------------------------------------------------------------> */
@@ -155,6 +154,9 @@ a:hover {
 
 .nav-text {
 	font-weight: lighter;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
 .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
@@ -182,21 +184,6 @@ a:hover {
 }
 
 
-/* Home Navigation */
-.home-navigation {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	position: fixed;
-	z-index: 1;
-	background-color: #0d1117;
-	margin-left: 5px;
-
-}
-
-.nav-link:focus, .nav-link:active, .nav-link:focus {
-	outline: none;
-	box-shadow: none;
-}
 /* Sections */
 
 .about-me {
@@ -214,11 +201,17 @@ a:hover {
 }
 
 
+/* Blog Section*/
+
+.blog-card {
+    margin-bottom: 10px;
+}
+
 /* Footer */
 
 /*********footer*******************/
-. kilimanjaro_area {
-    position: relative;
+.kilimanjaro_area {
+    
     z-index: 1;
 	}
 	.foo_top_header_one {
@@ -458,3 +451,43 @@ a.footer-blog-title {
 
 
 
+
+/* ******************************************** */
+
+.main-nav {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s; }
+
+nav.scrollUp {
+    transform: translateY(-80px); }
+  
+ul.navbar-menu {
+    margin-top: 3px;
+    display: inline-block;
+    display: block;
+    float: right;
+
+}
+
+ul.navbar-menu li {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+ul.navbar-menu li a {
+    font-size: 14px; }
+    
+nav button {
+    border: none;
+    float: right;
+    display: inline-block;
+}
+ 
+@media (max-width: 768px) {
+
+  nav button {
+    display: block; } }
