@@ -394,7 +394,6 @@ p, ul li, ol li {
     margin-bottom: 15px;
     padding: 0 0 15px 90px;
     position: relative;
-    z-index: 1;
 }
 .kilimanjaro_links a {
     border-bottom: 1px solid #333;
