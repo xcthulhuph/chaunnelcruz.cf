@@ -464,7 +464,7 @@ a.footer-blog-title {
 
 nav.scrollUp {
     transform: translateY(-180px); 
-    transition-duration: 1.5s;
+    transition-duration: 1s;
 }
   
 ul.navbar-menu {
