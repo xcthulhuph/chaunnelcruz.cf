@@ -1,0 +1,35 @@
+
+.nav-logo {
+	height: auto;
+	width: 150px;
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+  .nav-logo {
+	height: auto;
+	width: 150px;
+}
+
+	head.scrollUp{
+		transform: translateY(-15px); 
+
+	}
+	}
+}
+
+.nav-item {
+	margin-left: .5px;
+	margin-right: .5px;
+	display: inline-block;
+	text-align: center;
+}
+
+.home-bt {
+	padding-left: 2px;
+}
+
+.contact-bt {
+	padding-right: 2px;
+}
+
