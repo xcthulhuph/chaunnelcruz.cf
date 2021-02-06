@@ -1,6 +1,6 @@
 //loader //loading,complete,interactive
 document.onreadystatechange = function() { 
-            if (document.readyState !== "complete" ) { 
+            if (document.readyState !== "loading" ) { 
                 document.querySelector( 
                   "body").style.visibility = "hidden"; 
                 document.querySelector( 
