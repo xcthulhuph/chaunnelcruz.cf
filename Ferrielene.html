@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Chaunnel Maeve Cruz">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no, shrink-to-fit=no"> 
+  <meta name="description" content="A valentine card for my love.">
+  <meta name="og:description" content="A valentine card for my love.">
+  <meta property="og:title" content="I Love You, Ferrielene!" />
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  
+
+
+  <title>CodePen - Revolve Valentine 2017</title>
+  
+  
+  
+  
+<style>
+@keyframes heartGrow {
+   0% {
+      transform: scale(1.0);
+   }
+  
+   25% {
+      transform: scale(1.1);
+   }
+
+   50% {
+      transform: scale(1.2);
+   }
+  
+   75% {
+      transform: scale(1.1);
+   }
+
+   100% {
+      transform: scale(1.0);
+   }
+}
+
+html, body {
+    height: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+	  font-family: 'Montserrat', sans-serif;
+    
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 700;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valentine-container {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    border: 1px solid #D34156;
+    overflow: hidden;
+    margin: .5em .5em;
+    background-color: white;
+    cursor: pointer;
+}
+
+.inner-text{
+ margin-top: 20%;
+ color: #bf2e1a;
+}
+
+h5 {
+	font-size: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+h4 {
+	text-align: left;
+	margin-left: 10px;
+}
+
+.inner-text p{
+  color: #bf2e1a;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+h1{
+  font-size: 30px;
+  margin-top: 40%;
+  text-transform: uppercase;
+
+}
+
+
+
+.valentine-container:hover .inner-text .heart{
+  animation-name: heartGrow;
+  animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+}
+
+
+.valentine-container:hover .outer-content {
+    right: 300px;
+    opacity: 0;
+}
+
+.outer-content {
+    position: absolute;
+    width: 400px;
+    height: 500px;
+    top: 0;
+    right: 0;
+    background: #bf2e1a; 
+    color: #FFF;
+    transition: all 1s ease-in-out;
+
+    opacity: 1;
+}
+
+.outer-content p {
+	font-size: 10px;
+	margin-top: 20%;
+}
+
+
+
+.pulse{
+    animation: pound 0.85s infinite alternate;
+    -webkit-animation: pound 0.85s infinite alternate;
+}
+@keyframes pound {
+    0%   {transform: scale(1.2);}
+    25%  {transform: scale(0.8);}
+    50%  {transform: scale(1.2);}
+    70% {transform: scale(1.0);}
+    90% {transform: scale(1.0);}
+    100% {transform: scale(1.0);}
+}
+
+.inner {
+	color: #D34156;
+	font-size: 3.2rem;
+	
+}
+
+
+</style>
+
+
+
+</head>
+
+<body translate="no" >
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+<div class="valentine-container">
+  <div class="inner-text">
+  	<h4>Ferrielene,</h4>
+  	<h5>Thank you for always making me happy. You are the reason why I loved again. <br>Thank you for making me feel that I am enough. Thank you for loving me. You are one of the very best things that ever happened to me. I am very lucky to have you in my life. I am proud of you. I appreciate you so much. I love you with all my heart.</h5>
+  <i class='fa fa-heart pulse inner'></i>
+    <p>Love, Chaunnel.</p>
+  </div>
+    <div class="outer-content">
+    	<center>
+        <h1>Happy <br>Valentines <br>Day, <br>Ferrielene <i class='fa fa-heart pulse'></i></h1>
+        </center>
+        <p> -- click me -- </p>
+    </div>
+</div>
+  
+  
+  
+  
+
+</body>
+
+</html>
