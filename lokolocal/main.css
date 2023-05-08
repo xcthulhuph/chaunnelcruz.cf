@@ -1,0 +1,210 @@
+:root {
+  --background-color: rgb(10, 10, 10);  
+  --hulu-color: rgb(255, 216, 0);
+  
+  --gradient-green-rgb: 255, 216, 0;
+  --gradient-blue-rgb: 230, 194, 0;
+  --gradient-violet-rgb: 204, 173, 0;
+  
+  --highlight-blue-rgb: 255, 216, 0;
+}
+
+body{
+  align-items: center;
+  background-color: var(--background-color);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  width: 100%;
+}
+
+.absolute-centered {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.govia-font {
+  font-family: 'Govia Sans', sans-serif;
+}
+
+.zen-dots-font {
+  font-family: "Zen Dots", cursive;
+}
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+#green-filter {
+  background: radial-gradient(rgba(var(--gradient-green-rgb), 0.05), rgba(var(--gradient-green-rgb), 0.4) 80%);
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+.gradient {
+  filter: blur(3em);
+  height: 80px;
+  left: -5%;
+  position: absolute;
+  width: 110%;
+  z-index: 999;
+}
+
+#top-gradient {
+  background: linear-gradient(
+    to right, 
+    rgba(var(--gradient-blue-rgb), 0.75) 0% 10%,  
+    transparent 10% 20%,
+    rgba(var(--gradient-violet-rgb), 0.5) 20% 50%, 
+    rgba(var(--gradient-blue-rgb), 0.5) 50% 70%, 
+    rgba(var(--gradient-green-rgb), 0.75) 70%
+  );
+  top: -50px;
+  z-index: 999;
+}
+
+#bottom-gradient {
+  background: linear-gradient(
+    to right, 
+    rgba(var(--gradient-blue-rgb), 0.75) 0% 10%,  
+    transparent 10% 30%,
+    rgba(var(--gradient-blue-rgb), 0.5) 30% 50%, 
+    transparent 50% 70%,
+    rgba(var(--gradient-violet-rgb), 0.5) 70% 80%, 
+    transparent 80%
+  );
+  bottom: -50px;
+  z-index: 999;
+}
+
+#logo-wrapper {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  z-index: 999;
+  background-color: #000;
+}
+
+#logo {
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+
+#logo-border {
+  background-color: var(--hulu-color);
+  border-radius: 2.25em;
+  height: 160%;
+  width: 140%;
+  z-index: 1;
+}
+  
+#logo-border-inner {
+  background-color: var(--background-color);
+  border-radius: 2em;
+  height: calc(160% - 0.5em);
+  width: calc(140% - 0.5em);
+  z-index: 2;
+}
+
+#logo-text {
+  position: relative;
+  z-index: 3;
+}
+
+#hulu-text {
+  color: var(--hulu-color);
+  font-size: 8em;
+  height: 120px;
+  line-height: 120px;
+}
+
+#originals-text {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 0.12em;
+}
+    
+@keyframes bounce {
+  from, 3.33%, 8.83%, 16.66% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  6.66%, 7.16% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0) scaleY(1.1);
+  }
+
+  11.66% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -7px, 0) scaleY(1.05);
+  }
+
+  13.33% {
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
+  }
+
+  15% {
+    transform: translate3d(0, -2px, 0) scaleY(1.02);
+  }
+}
+
+@media(max-width: 800px) {
+  #logo-wrapper {
+    transform: scale(0.7);
+  }
+}
+
+@media(max-width: 600px) {  
+  #restart-button {
+    left: auto;
+    right: 10px;
+    transform: none;
+  }
+}
+.loading-image {
+    max-width: 100vw;
+    min-width: 15vw;
+    height: auto;
+}
+
+
+
+#loader {
+  
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%
+  position: fixed;
+  z-index: 9999
+}
+
+#content {
+  z-index: 1;
+}
+
+h1 {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: poppins;
+}
